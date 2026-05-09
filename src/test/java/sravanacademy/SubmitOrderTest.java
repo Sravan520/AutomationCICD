@@ -28,11 +28,11 @@ import pageObjects.ProductCatelogue;
 
 public class SubmitOrderTest extends BaseTest{
 
-	
-	String BuyingItem="ZARA COAT 3";
+    
+    String BuyingItem="ZARA COAT 3";
 	@Test(dataProvider="getData",groups="Purchase Product")
 	public void submitOrderTest(HashMap<String,String> input) throws Exception {
-		
+		System.out.println("Testing CICD");
 		String cvv="513";
 		String country="India";
 		ProductCatelogue prodCatelogue=login.loginApplication(input.get("username"),input.get("password"));
